@@ -28,6 +28,7 @@
 		315CDD72173D831800B6F55B /* RdioPluginAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginAction.m; sourceTree = "<group>"; };
 		315CDD74173D831800B6F55B /* RdioPluginSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioPluginSource.h; sourceTree = "<group>"; };
 		315CDD75173D831800B6F55B /* RdioPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginSource.m; sourceTree = "<group>"; };
+		315CDD7C173D87C200B6F55B /* Rdio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rdio.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +73,7 @@
 		315CDD62173D831700B6F55B /* RdioPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				315CDD7C173D87C200B6F55B /* Rdio.h */,
 				315CDD71173D831800B6F55B /* RdioPluginAction.h */,
 				315CDD72173D831800B6F55B /* RdioPluginAction.m */,
 				315CDD74173D831800B6F55B /* RdioPluginSource.h */,

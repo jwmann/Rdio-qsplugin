@@ -7,7 +7,21 @@
 
 #define QSRdioPluginType @"QSRdioPluginType"
 
+@class RdioApplication;
+
 @interface QSRdioPluginSource : QSObjectSource
 {
+  RdioApplication *rdio;
 }
+
+-(id)init;
+
+-(void)playPause;
+-(void)increaseVolume;
+-(void)decreaseVolume;
+-(void)previousTrack;
+-(void)nextTrack;
+
+@property (nonatomic, strong) RdioApplication *rdio;
+
 @end
