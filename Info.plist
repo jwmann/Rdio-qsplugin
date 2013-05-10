@@ -24,9 +24,9 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>QSActions</key>
+	<key>QSActionsTemplate</key>
 	<dict>
-		<key>RdioPluginExampleAction</key>
+		<key>RdioPluginExample</key>
 		<dict>
 			<key>actionClass</key>
 			<string>QSRdioPluginActionProvider</string>
@@ -38,6 +38,8 @@
 			</array>
 			<key>icon</key>
 			<string>ToolbarAdvanced</string>
+			<key>name</key>
+			<string>Rdio Action Example</string>
 		</dict>
 	</dict>
 	<key>QSPlugIn</key>
@@ -60,7 +62,7 @@
 			<string>com.rdio.desktop</string>
 		</array>
 	</dict>
-	<key>QSPresetAdditionsTemplate</key>
+	<key>QSPresetAdditions</key>
 	<array>
 		<dict>
 			<key>ID</key>
@@ -69,17 +71,19 @@
 			<array>
 				<dict>
 					<key>ID</key>
-					<string>QSPresetRdioPluginExample</string>
+					<string>QSPresetRdioControlScripts</string>
+					<key>icon</key>
+					<string>com.rdio.desktop</string>
 					<key>name</key>
-					<string>Items from RdioPlugin</string>
+					<string>Rdio Controls</string>
 					<key>source</key>
-					<string>QSRdioPluginSource</string>
+					<string>QSRdioPluginControlSource</string>
 				</dict>
 			</array>
 			<key>icon</key>
-			<string>KEXT</string>
+			<string>com.rdio.desktop</string>
 			<key>name</key>
-			<string>RdioPlugin Presets</string>
+			<string>Rdio</string>
 			<key>source</key>
 			<string>QSGroupObjectSource</string>
 		</dict>
@@ -116,9 +120,9 @@
 			<key>com.domain.application</key>
 			<string>QSRdioPluginSource</string>
 		</dict>
-		<key>QSCommandsTemplate</key>
+		<key>QSCommands</key>
 		<dict>
-			<key>RdioPluginExampleCommand</key>
+			<key>RdioPluginNextTrack</key>
 			<dict>
 				<key>command</key>
 				<dict>
@@ -131,13 +135,40 @@
 							<key>qs.action</key>
 							<dict>
 								<key>actionClass</key>
-								<string>QSRdioPluginActionProvider</string>
+								<string>QSRdioPluginControlsProvider</string>
 								<key>actionSelector</key>
-								<string>someSelector</string>
+								<string>nextTrack</string>
 								<key>icon</key>
 								<string>defaultAction</string>
 								<key>name</key>
-								<string>Do Something</string>
+								<string>Rdio Next Track</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioPluginInternalCommand</string>
+				</dict>
+			</dict>
+			<key>RdioPluginPlayPause</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>QSRdioPluginControlsProvider</string>
+								<key>actionSelector</key>
+								<string>playPause</string>
+								<key>icon</key>
+								<string>defaultAction</string>
+								<key>name</key>
+								<string>Rdio Play/Pause</string>
 							</dict>
 						</dict>
 					</dict>
@@ -153,6 +184,8 @@
 		</dict>
 		<key>QSObjectSources</key>
 		<dict>
+			<key>QSRdioPluginControlSource</key>
+			<string>QSRdioPluginControlSource</string>
 			<key>QSRdioPluginSource</key>
 			<string>QSRdioPluginSource</string>
 		</dict>

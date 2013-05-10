@@ -6,69 +6,10 @@
 //
 
 #import "RdioPluginSource.h"
-#import "Rdio.h"
 
 @implementation QSRdioPluginSource
 
-@synthesize rdio;
 
-/*- (id)init
-{
-  if (self = [super init]) {
-    self.rdio = [SBApplication applicationWithBundleIdentifier:@"com.rdio.desktop"];
-  }
-  return self;
-}*/
-
--(void)playPause
-{
-  [self.rdio playpause];
-}
-
-- (void)decreaseVolume
-{
-  NSInteger newVolume = self.rdio.soundVolume - 10;
-  if (newVolume < 0) {
-    newVolume = 0;
-  }
-  self.rdio.soundVolume = newVolume;
-}
-
--(void)increaseVolume
-{
-  NSInteger newVolume = rdio.soundVolume + 10;
-  if (newVolume > 100) {
-    newVolume = 100;
-  }
-  rdio.soundVolume = newVolume;
-}
-
--(void)previousTrack
-{
-  // Previous track just goes to the begining if the current track is pase ~2 seconds, hence why
-  // it is called twice sometimes.
-  if (self.rdio.playerPosition >= 3) {
-    [self.rdio previousTrack];
-  }
-  
-  [self.rdio previousTrack];
-}
-
--(void)nextTrack
-{
-  [self.rdio nextTrack];
-}
-
-
-- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
-{
-	return NO;
-}
-
-- (NSImage *)iconForEntry:(NSDictionary *)dict
-{
-	return nil;
-}
 
 // Return a unique identifier for an object (if you haven't assigned one before)
 //- (NSString *)identifierForObject:(id <QSObject>)object
@@ -105,4 +46,44 @@
 	return YES;
 }
 */
+@end
+
+@implementation QSRdioPluginControlSource
+
+- (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry {
+	// rescan only if the indexDate is prior to the last launch
+	NSDate *launched = [[NSRunningApplication currentApplication] launchDate];
+	if (launched) {
+		return ([launched compare:indexDate] == NSOrderedAscending);
+	} else {
+		// Quicksilver wasn't launched by LaunchServices - date unknown - rescan to be safe
+		return NO;
+	}
+}
+
+- (NSArray *)objectsForEntry:(NSDictionary *)theEntry
+{
+	NSMutableArray *controlObjects = [NSMutableArray arrayWithCapacity:1];
+	QSCommand *command = nil;
+	NSDictionary *commandDict = nil;
+	QSAction *newObject = nil;
+	NSString *actionID = nil;
+	NSDictionary *actionDict = nil;
+	// create catalog objects using info specified in the plist (under QSCommands)
+	NSArray *controls = [NSArray arrayWithObjects:@"RdioPluginPlayPause", @"RdioPluginNextTrack", nil];
+	for (NSString *control in controls) {
+		command = [QSCommand commandWithIdentifier:control];
+		if (command) {
+			commandDict = [command commandDict];
+			actionID = [commandDict objectForKey:@"directID"];
+			actionDict = [[[commandDict objectForKey:@"directArchive"] objectForKey:@"data"] objectForKey:QSActionType];
+			if (actionDict) {
+				newObject = [QSAction actionWithDictionary:actionDict identifier:actionID bundle:nil];
+				[controlObjects addObject:newObject];
+			}
+		}
+	}
+	return controlObjects;
+}
+
 @end

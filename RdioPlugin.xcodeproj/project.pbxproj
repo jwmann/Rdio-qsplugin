@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3150FEC8173D951300AFD4E8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */; };
 		315CDD61173D831700B6F55B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315CDD60173D831700B6F55B /* Cocoa.framework */; };
 		315CDD67173D831800B6F55B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315CDD65173D831800B6F55B /* InfoPlist.strings */; };
 		315CDD73173D831800B6F55B /* RdioPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD72173D831800B6F55B /* RdioPluginAction.m */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		315CDD5D173D831700B6F55B /* Rdio Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rdio Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		315CDD60173D831700B6F55B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		315CDD64173D831800B6F55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
@@ -37,6 +39,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				315CDD61173D831700B6F55B /* Cocoa.framework in Frameworks */,
+				3150FEC8173D951300AFD4E8 /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +68,7 @@
 		315CDD5F173D831700B6F55B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */,
 				315CDD60173D831700B6F55B /* Cocoa.framework */,
 			);
 			name = Frameworks;
