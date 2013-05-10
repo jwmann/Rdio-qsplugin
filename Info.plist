@@ -4,20 +4,22 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Rdio</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string>Rdio Plugin</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.jameswmann.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.jameswmann.QSRdioPlugin</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Rdio Plugin</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -44,14 +46,19 @@
 		<string>James W Mann</string>
 		<key>categories</key>
 		<array>
+			<string>Music</string>
 			<string>Applications</string>
 		</array>
 		<key>description</key>
-		<string>One-line summary for this plug-in</string>
+		<string>Gives controls and other functionality to the Rdio desktop mac client through Quicksilver.</string>
 		<key>extendedDescription</key>
 		<string>HTML formatted documentation for this plug-in.</string>
 		<key>icon</key>
-		<string>KEXT</string>
+		<string>com.rdio.desktop</string>
+		<key>relatedBundles</key>
+		<array>
+			<string>com.rdio.desktop</string>
+		</array>
 	</dict>
 	<key>QSPresetAdditionsTemplate</key>
 	<array>
@@ -212,15 +219,15 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>QSRequirementsTemplate</key>
+	<key>QSRequirements</key>
 	<dict>
-		<key>plugins</key>
+		<key>bundles</key>
 		<array>
 			<dict>
 				<key>id</key>
-				<string>com.qsapp.Another.PlugIn</string>
+				<string>com.rdio.desktop</string>
 				<key>name</key>
-				<string>Another Plug-in</string>
+				<string>Rdio</string>
 			</dict>
 		</array>
 	</dict>

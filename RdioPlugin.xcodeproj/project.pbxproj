@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RdioPlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		315CDD5D173D831700B6F55B /* Rdio Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rdio Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		315CDD60173D831700B6F55B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		315CDD64173D831800B6F55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		315CDD66173D831800B6F55B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		315CDD5E173D831700B6F55B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */,
+				315CDD5D173D831700B6F55B /* Rdio Plugin.qsplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			);
 			name = RdioPlugin;
 			productName = RdioPlugin;
-			productReference = 315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */;
+			productReference = 315CDD5D173D831700B6F55B /* Rdio Plugin.qsplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +223,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rdio Plugin";
 			};
 			name = Debug;
 		};
@@ -231,7 +231,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Rdio Plugin";
 			};
 			name = Release;
 		};
