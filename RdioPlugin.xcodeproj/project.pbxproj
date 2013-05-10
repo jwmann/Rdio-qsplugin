@@ -1,0 +1,260 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		315CDD61173D831700B6F55B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315CDD60173D831700B6F55B /* Cocoa.framework */; };
+		315CDD67173D831800B6F55B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315CDD65173D831800B6F55B /* InfoPlist.strings */; };
+		315CDD73173D831800B6F55B /* RdioPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD72173D831800B6F55B /* RdioPluginAction.m */; };
+		315CDD76173D831800B6F55B /* RdioPluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD75173D831800B6F55B /* RdioPluginSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RdioPlugin.qsplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		315CDD60173D831700B6F55B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		315CDD64173D831800B6F55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		315CDD66173D831800B6F55B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		315CDD69173D831800B6F55B /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		315CDD6A173D831800B6F55B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		315CDD6B173D831800B6F55B /* Developer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
+		315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
+		315CDD6D173D831800B6F55B /* Quicksilver.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quicksilver.pch; sourceTree = "<group>"; };
+		315CDD6E173D831800B6F55B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		315CDD71173D831800B6F55B /* RdioPluginAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioPluginAction.h; sourceTree = "<group>"; };
+		315CDD72173D831800B6F55B /* RdioPluginAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginAction.m; sourceTree = "<group>"; };
+		315CDD74173D831800B6F55B /* RdioPluginSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioPluginSource.h; sourceTree = "<group>"; };
+		315CDD75173D831800B6F55B /* RdioPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		315CDD5A173D831700B6F55B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315CDD61173D831700B6F55B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		315CDD53173D831700B6F55B = {
+			isa = PBXGroup;
+			children = (
+				315CDD62173D831700B6F55B /* RdioPlugin */,
+				315CDD5F173D831700B6F55B /* Frameworks */,
+				315CDD5E173D831700B6F55B /* Products */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		315CDD5E173D831700B6F55B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		315CDD5F173D831700B6F55B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				315CDD60173D831700B6F55B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		315CDD62173D831700B6F55B /* RdioPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				315CDD71173D831800B6F55B /* RdioPluginAction.h */,
+				315CDD72173D831800B6F55B /* RdioPluginAction.m */,
+				315CDD74173D831800B6F55B /* RdioPluginSource.h */,
+				315CDD75173D831800B6F55B /* RdioPluginSource.m */,
+				315CDD68173D831800B6F55B /* Configuration */,
+				315CDD63173D831800B6F55B /* Supporting Files */,
+			);
+			path = RdioPlugin;
+			sourceTree = "<group>";
+		};
+		315CDD63173D831800B6F55B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				315CDD64173D831800B6F55B /* Info.plist */,
+				315CDD65173D831800B6F55B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		315CDD68173D831800B6F55B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				315CDD69173D831800B6F55B /* Common.xcconfig */,
+				315CDD6A173D831800B6F55B /* Debug.xcconfig */,
+				315CDD6B173D831800B6F55B /* Developer.xcconfig */,
+				315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */,
+				315CDD6D173D831800B6F55B /* Quicksilver.pch */,
+				315CDD6E173D831800B6F55B /* Release.xcconfig */,
+			);
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		315CDD5C173D831700B6F55B /* RdioPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 315CDD79173D831800B6F55B /* Build configuration list for PBXNativeTarget "RdioPlugin" */;
+			buildPhases = (
+				315CDD58173D831700B6F55B /* ShellScript */,
+				315CDD59173D831700B6F55B /* Sources */,
+				315CDD5A173D831700B6F55B /* Frameworks */,
+				315CDD5B173D831700B6F55B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RdioPlugin;
+			productName = RdioPlugin;
+			productReference = 315CDD5D173D831700B6F55B /* RdioPlugin.qsplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		315CDD54173D831700B6F55B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "James W Mann";
+			};
+			buildConfigurationList = 315CDD57173D831700B6F55B /* Build configuration list for PBXProject "RdioPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 315CDD53173D831700B6F55B;
+			productRefGroup = 315CDD5E173D831700B6F55B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				315CDD5C173D831700B6F55B /* RdioPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		315CDD5B173D831700B6F55B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315CDD67173D831800B6F55B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		315CDD58173D831700B6F55B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"$QS_BUILD_ROOT/Tools/bltrversion\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		315CDD59173D831700B6F55B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				315CDD73173D831800B6F55B /* RdioPluginAction.m in Sources */,
+				315CDD76173D831800B6F55B /* RdioPluginSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		315CDD65173D831800B6F55B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				315CDD66173D831800B6F55B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		315CDD77173D831800B6F55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315CDD6A173D831800B6F55B /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		315CDD78173D831800B6F55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315CDD6E173D831800B6F55B /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		315CDD7A173D831800B6F55B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		315CDD7B173D831800B6F55B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315CDD6C173D831800B6F55B /* QSPlugIn.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		315CDD57173D831700B6F55B /* Build configuration list for PBXProject "RdioPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315CDD77173D831800B6F55B /* Debug */,
+				315CDD78173D831800B6F55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		315CDD79173D831800B6F55B /* Build configuration list for PBXNativeTarget "RdioPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				315CDD7A173D831800B6F55B /* Debug */,
+				315CDD7B173D831800B6F55B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 315CDD54173D831700B6F55B /* Project object */;
+}
