@@ -3,13 +3,13 @@ Rdio Quicksilver Plugin
 
 A Quicksilver Plugin that gives controls and other functionality to the Rdio desktop mac client.
 
-Forecasted Function List:
+Function List:
 -------------------------
 - Rdio Play/Pause
-- Rdio Next/Skip
-- Rdio Previous/Back
-- Rdio Add current song to collection
-- Rdio search
+- Rdio Next Track
+- Rdio Previous Track
+- Rdio Add current song to collection -- Coming Soon!
+- Rdio search -- Coming Soon!
 
 - - -
 
