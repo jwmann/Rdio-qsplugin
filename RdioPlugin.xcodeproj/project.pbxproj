@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3150FEC8173D951300AFD4E8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */; };
+		3150FECD173ED75800AFD4E8 /* next.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3150FECA173ED75800AFD4E8 /* next.iconset */; };
+		3150FECE173ED75800AFD4E8 /* playPause.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3150FECB173ED75800AFD4E8 /* playPause.iconset */; };
+		3150FECF173ED75800AFD4E8 /* previous.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3150FECC173ED75800AFD4E8 /* previous.iconset */; };
 		315CDD61173D831700B6F55B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315CDD60173D831700B6F55B /* Cocoa.framework */; };
 		315CDD67173D831800B6F55B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 315CDD65173D831800B6F55B /* InfoPlist.strings */; };
 		315CDD73173D831800B6F55B /* RdioPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD72173D831800B6F55B /* RdioPluginAction.m */; };
 		315CDD76173D831800B6F55B /* RdioPluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD75173D831800B6F55B /* RdioPluginSource.m */; };
+		31B5EF62173EDB6400AFD086 /* rdio.icns in Resources */ = {isa = PBXBuildFile; fileRef = 31B5EF61173EDB6400AFD086 /* rdio.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		3150FECA173ED75800AFD4E8 /* next.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = next.iconset; sourceTree = "<group>"; };
+		3150FECB173ED75800AFD4E8 /* playPause.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = playPause.iconset; sourceTree = "<group>"; };
+		3150FECC173ED75800AFD4E8 /* previous.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = previous.iconset; sourceTree = "<group>"; };
 		315CDD5D173D831700B6F55B /* Rdio Plugin.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rdio Plugin.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
 		315CDD60173D831700B6F55B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		315CDD64173D831800B6F55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
@@ -31,6 +38,7 @@
 		315CDD74173D831800B6F55B /* RdioPluginSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RdioPluginSource.h; sourceTree = "<group>"; };
 		315CDD75173D831800B6F55B /* RdioPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginSource.m; sourceTree = "<group>"; };
 		315CDD7C173D87C200B6F55B /* Rdio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rdio.h; sourceTree = "<group>"; };
+		31B5EF61173EDB6400AFD086 /* rdio.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rdio.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3150FEC9173ED75800AFD4E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31B5EF61173EDB6400AFD086 /* rdio.icns */,
+				3150FECA173ED75800AFD4E8 /* next.iconset */,
+				3150FECB173ED75800AFD4E8 /* playPause.iconset */,
+				3150FECC173ED75800AFD4E8 /* previous.iconset */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
 		315CDD53173D831700B6F55B = {
 			isa = PBXGroup;
 			children = (
 				315CDD62173D831700B6F55B /* RdioPlugin */,
+				3150FEC9173ED75800AFD4E8 /* Resources */,
 				315CDD5F173D831700B6F55B /* Frameworks */,
 				315CDD5E173D831700B6F55B /* Products */,
 			);
@@ -164,6 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				315CDD67173D831800B6F55B /* InfoPlist.strings in Resources */,
+				3150FECD173ED75800AFD4E8 /* next.iconset in Resources */,
+				3150FECE173ED75800AFD4E8 /* playPause.iconset in Resources */,
+				3150FECF173ED75800AFD4E8 /* previous.iconset in Resources */,
+				31B5EF62173EDB6400AFD086 /* rdio.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

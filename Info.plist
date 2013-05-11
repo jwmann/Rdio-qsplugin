@@ -139,7 +139,7 @@
 								<key>actionSelector</key>
 								<string>decreaseVolume</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>RdioIcon</string>
 								<key>name</key>
 								<string>Rdio Decrease Volume</string>
 							</dict>
@@ -166,7 +166,7 @@
 								<key>actionSelector</key>
 								<string>increaseVolume</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>RdioIcon</string>
 								<key>name</key>
 								<string>Rdio Increase Volume</string>
 							</dict>
@@ -193,7 +193,7 @@
 								<key>actionSelector</key>
 								<string>nextTrack</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>RdioNextIcon</string>
 								<key>name</key>
 								<string>Rdio Next Track</string>
 							</dict>
@@ -220,7 +220,7 @@
 								<key>actionSelector</key>
 								<string>playPause</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>RdioPlayPauseIcon</string>
 								<key>name</key>
 								<string>Rdio Play/Pause</string>
 							</dict>
@@ -247,7 +247,7 @@
 								<key>actionSelector</key>
 								<string>previousTrack</string>
 								<key>icon</key>
-								<string>defaultAction</string>
+								<string>RdioPreviousIcon</string>
 								<key>name</key>
 								<string>Rdio Previous Track</string>
 							</dict>
@@ -344,6 +344,37 @@
 				<string>Rdio</string>
 			</dict>
 		</array>
+	</dict>
+	<key>QSResourceAdditions</key>
+	<dict>
+		<key>RdioIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>rdio.icns</string>
+		</dict>
+		<key>RdioNextIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>next.icns</string>
+		</dict>
+		<key>RdioPlayPauseIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>playPause.icns</string>
+		</dict>
+		<key>RdioPreviousIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>previous.icns</string>
+		</dict>
 	</dict>
 	<key>QSTriggerAdditionsTemplate</key>
 	<array>
