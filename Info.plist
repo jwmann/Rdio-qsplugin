@@ -122,6 +122,33 @@
 		</dict>
 		<key>QSCommands</key>
 		<dict>
+			<key>RdioPluginIncreaseVolume</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>QSRdioPluginControlsProvider</string>
+								<key>actionSelector</key>
+								<string>increaseVolume</string>
+								<key>icon</key>
+								<string>defaultAction</string>
+								<key>name</key>
+								<string>Rdio Increase Volume</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioPluginInternalCommand</string>
+				</dict>
+			</dict>
 			<key>RdioPluginNextTrack</key>
 			<dict>
 				<key>command</key>
