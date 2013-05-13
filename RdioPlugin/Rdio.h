@@ -33,6 +33,8 @@ typedef enum RdioEPSS RdioEPSS;
 - (void) previousTrack;  // Skip to the previous track.
 - (void) playpause;  // Toggle play/pause.
 - (void) playSource:(NSString *)source;  // Resume playback.
+- (void) addToCollection; // Add current song to collection
+- (void) removeFromCollection; // Remove current song from collection
 
 @end
 

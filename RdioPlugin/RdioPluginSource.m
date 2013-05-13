@@ -70,7 +70,7 @@
 	NSString *actionID = nil;
 	NSDictionary *actionDict = nil;
 	// create catalog objects using info specified in the plist (under QSCommands)
-	NSArray *controls = [NSArray arrayWithObjects:@"RdioPluginPlayPause", @"RdioPluginNextTrack", @"RdioPluginPreviousTrack", @"RdioPluginIncreaseVolume", @"RdioPluginDecreaseVolume", nil];
+	NSArray *controls = [NSArray arrayWithObjects:@"RdioPluginPlayPause", @"RdioPluginNextTrack", @"RdioPluginPreviousTrack", @"RdioPluginIncreaseVolume", @"RdioPluginDecreaseVolume", @"RdioPluginAddToCollection", @"RdioPluginRemoveFromCollection", nil];
 	for (NSString *control in controls) {
 		command = [QSCommand commandWithIdentifier:control];
 		if (command) {

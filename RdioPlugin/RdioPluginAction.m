@@ -59,6 +59,14 @@
   [self.rdio nextTrack];
 }
 
+- (void) addToCollection {
+  [self.rdio addToCollection];
+}
+
+- (void) removeFromCollection {
+  [self.rdio removeFromCollection];
+}
+
 
 - (BOOL)indexIsValidFromDate:(NSDate *)indexDate forEntry:(NSDictionary *)theEntry
 {

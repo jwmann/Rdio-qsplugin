@@ -122,6 +122,33 @@
 		</dict>
 		<key>QSCommands</key>
 		<dict>
+			<key>RdioPluginAddToCollection</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>QSRdioPluginControlsProvider</string>
+								<key>actionSelector</key>
+								<string>addToCollection</string>
+								<key>icon</key>
+								<string>RdioIcon</string>
+								<key>name</key>
+								<string>Rdio Add Current Song to Collection</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioPluginInternalCommand</string>
+				</dict>
+			</dict>
 			<key>RdioPluginDecreaseVolume</key>
 			<dict>
 				<key>command</key>
@@ -250,6 +277,33 @@
 								<string>RdioPreviousIcon</string>
 								<key>name</key>
 								<string>Rdio Previous Track</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>directID</key>
+					<string>RdioPluginInternalCommand</string>
+				</dict>
+			</dict>
+			<key>RdioPluginRemoveFromCollection</key>
+			<dict>
+				<key>command</key>
+				<dict>
+					<key>actionID</key>
+					<string>QSObjCSendMessageAction</string>
+					<key>directArchive</key>
+					<dict>
+						<key>data</key>
+						<dict>
+							<key>qs.action</key>
+							<dict>
+								<key>actionClass</key>
+								<string>QSRdioPluginControlsProvider</string>
+								<key>actionSelector</key>
+								<string>removeFromCollection</string>
+								<key>icon</key>
+								<string>RdioIcon</string>
+								<key>name</key>
+								<string>Rdio Remove Current Song from Collection</string>
 							</dict>
 						</dict>
 					</dict>

@@ -19,6 +19,8 @@
 -(void)decreaseVolume;
 -(void)previousTrack;
 -(void)nextTrack;
+- (void) addToCollection;
+- (void) removeFromCollection;
 
 @property (nonatomic, strong) RdioApplication *rdio;
 
