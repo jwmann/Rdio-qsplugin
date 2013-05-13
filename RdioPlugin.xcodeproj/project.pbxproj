@@ -16,6 +16,8 @@
 		315CDD73173D831800B6F55B /* RdioPluginAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD72173D831800B6F55B /* RdioPluginAction.m */; };
 		315CDD76173D831800B6F55B /* RdioPluginSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 315CDD75173D831800B6F55B /* RdioPluginSource.m */; };
 		31B5EF62173EDB6400AFD086 /* rdio.icns in Resources */ = {isa = PBXBuildFile; fileRef = 31B5EF61173EDB6400AFD086 /* rdio.icns */; };
+		31C824E417416017005CDE74 /* add.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 31C824E217416017005CDE74 /* add.iconset */; };
+		31C824E517416017005CDE74 /* remove.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 31C824E317416017005CDE74 /* remove.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		315CDD75173D831800B6F55B /* RdioPluginSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RdioPluginSource.m; sourceTree = "<group>"; };
 		315CDD7C173D87C200B6F55B /* Rdio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rdio.h; sourceTree = "<group>"; };
 		31B5EF61173EDB6400AFD086 /* rdio.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = rdio.icns; sourceTree = "<group>"; };
+		31C824E217416017005CDE74 /* add.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = add.iconset; sourceTree = "<group>"; };
+		31C824E317416017005CDE74 /* remove.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = remove.iconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				3150FECA173ED75800AFD4E8 /* next.iconset */,
 				3150FECB173ED75800AFD4E8 /* playPause.iconset */,
 				3150FECC173ED75800AFD4E8 /* previous.iconset */,
+				31C824E217416017005CDE74 /* add.iconset */,
+				31C824E317416017005CDE74 /* remove.iconset */,
 			);
 			path = Resources;
 			sourceTree = SOURCE_ROOT;
@@ -188,6 +194,8 @@
 				3150FECE173ED75800AFD4E8 /* playPause.iconset in Resources */,
 				3150FECF173ED75800AFD4E8 /* previous.iconset in Resources */,
 				31B5EF62173EDB6400AFD086 /* rdio.icns in Resources */,
+				31C824E417416017005CDE74 /* add.iconset in Resources */,
+				31C824E517416017005CDE74 /* remove.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

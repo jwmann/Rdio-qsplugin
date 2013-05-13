@@ -139,7 +139,7 @@
 								<key>actionSelector</key>
 								<string>addToCollection</string>
 								<key>icon</key>
-								<string>RdioIcon</string>
+								<string>RdioAddIcon</string>
 								<key>name</key>
 								<string>Rdio Add Current Song to Collection</string>
 							</dict>
@@ -301,7 +301,7 @@
 								<key>actionSelector</key>
 								<string>removeFromCollection</string>
 								<key>icon</key>
-								<string>RdioIcon</string>
+								<string>RdioRemoveIcon</string>
 								<key>name</key>
 								<string>Rdio Remove Current Song from Collection</string>
 							</dict>
@@ -401,6 +401,13 @@
 	</dict>
 	<key>QSResourceAdditions</key>
 	<dict>
+		<key>RdioAddIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>add.icns</string>
+		</dict>
 		<key>RdioIcon</key>
 		<dict>
 			<key>bundle</key>
@@ -428,6 +435,13 @@
 			<string>com.jameswmann.QSRdioPlugin</string>
 			<key>resource</key>
 			<string>previous.icns</string>
+		</dict>
+		<key>RdioRemoveIcon</key>
+		<dict>
+			<key>bundle</key>
+			<string>com.jameswmann.QSRdioPlugin</string>
+			<key>resource</key>
+			<string>remove.icns</string>
 		</dict>
 	</dict>
 	<key>QSTriggerAdditionsTemplate</key>
