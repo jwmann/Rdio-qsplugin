@@ -13,7 +13,7 @@ Available Commands:
 - Rdio Increase Volume
 - Rdio Decrease Volume
 
-Forcasted Functions:
+Forecasted Functions:
 --------------------
 - Rdio Search
 - Rdio Search Artist and Start Station
