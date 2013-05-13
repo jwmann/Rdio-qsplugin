@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		314DB3A417416BAD00C73E92 /* Documentation.md in Resources */ = {isa = PBXBuildFile; fileRef = 314DB3A317416BAD00C73E92 /* Documentation.md */; };
 		3150FEC8173D951300AFD4E8 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */; };
 		3150FECD173ED75800AFD4E8 /* next.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3150FECA173ED75800AFD4E8 /* next.iconset */; };
 		3150FECE173ED75800AFD4E8 /* playPause.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 3150FECB173ED75800AFD4E8 /* playPause.iconset */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314DB3A317416BAD00C73E92 /* Documentation.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Documentation.md; sourceTree = "<group>"; };
 		3150FEC7173D951300AFD4E8 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		3150FECA173ED75800AFD4E8 /* next.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = next.iconset; sourceTree = "<group>"; };
 		3150FECB173ED75800AFD4E8 /* playPause.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = playPause.iconset; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				315CDD62173D831700B6F55B /* RdioPlugin */,
 				3150FEC9173ED75800AFD4E8 /* Resources */,
+				314DB3A317416BAD00C73E92 /* Documentation.md */,
 				315CDD5F173D831700B6F55B /* Frameworks */,
 				315CDD5E173D831700B6F55B /* Products */,
 			);
@@ -196,6 +199,7 @@
 				31B5EF62173EDB6400AFD086 /* rdio.icns in Resources */,
 				31C824E417416017005CDE74 /* add.iconset in Resources */,
 				31C824E517416017005CDE74 /* remove.iconset in Resources */,
+				314DB3A417416BAD00C73E92 /* Documentation.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
