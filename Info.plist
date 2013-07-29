@@ -23,7 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>9</string>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -36,7 +36,30 @@
 		<key>description</key>
 		<string>Gives controls and other functionality to the Rdio desktop mac client through Quicksilver.</string>
 		<key>extendedDescription</key>
-		<string>HTML formatted documentation for this plug-in.</string>
+		<string>&lt;h1&gt;Rdio Quicksilver Plugin&lt;/h1&gt;
+&lt;p&gt;A Quicksilver Plugin that gives controls and other functionality to the Rdio desktop mac client.&lt;/p&gt;
+&lt;h2&gt;Requirements:&lt;/h2&gt;
+&lt;p&gt;Rdio Mac Desktop Client&lt;br&gt;
+It can be downloaded &lt;a href="http://www.rdio.com/media/static/desktop/mac/Rdio.dmg"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;How to Use:&lt;/h2&gt;
+&lt;p&gt;Simply type one of the commands below from within Quicksilver's input area and press 'Enter' (Run Action)&lt;/p&gt;
+&lt;h2&gt;Available Commands:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rdio Play/Pause&lt;/li&gt;
+&lt;li&gt;Rdio Next Track&lt;/li&gt;
+&lt;li&gt;Rdio Previous Track&lt;/li&gt;
+&lt;li&gt;Rdio Add Current Song to Collection&lt;/li&gt;
+&lt;li&gt;Rdio Remove Current Song from Collection&lt;/li&gt;
+&lt;li&gt;Rdio Increase Volume&lt;/li&gt;
+&lt;li&gt;Rdio Decrease Volume&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Forecasted Functions:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rdio Search&lt;/li&gt;
+&lt;li&gt;Rdio Search Artist and Start Station&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Inspired by the alpha and abandoned QS Plugin featured &lt;a href="https://github.com/tonycosentini/Rdio-qsplugin"&gt;here&lt;/a&gt;&lt;/p&gt;</string>
 		<key>icon</key>
 		<string>com.rdio.desktop</string>
 		<key>relatedBundles</key>
