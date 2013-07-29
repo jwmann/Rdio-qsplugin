@@ -78,14 +78,3 @@
 	return nil;
 }
 @end
-
-@implementation QSRdioPluginActionProvider
-
-- (QSObject *)performActionOnObject:(QSObject *)dObject{
-  
-  NSLog(@"I'm doing something with %@", [dObject stringValue]);
-  //  id theMeat = [dObject objectForType:QSRdioPluginType];
-  return nil;
-}
-
-@end

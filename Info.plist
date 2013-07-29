@@ -24,24 +24,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
-	<key>QSActionsTemplate</key>
-	<dict>
-		<key>RdioPluginExample</key>
-		<dict>
-			<key>actionClass</key>
-			<string>QSRdioPluginActionProvider</string>
-			<key>actionSelector</key>
-			<string>performActionOnObject:</string>
-			<key>directTypes</key>
-			<array>
-				<string>QSRdioPluginType</string>
-			</array>
-			<key>icon</key>
-			<string>ToolbarAdvanced</string>
-			<key>name</key>
-			<string>Rdio Action Example</string>
-		</dict>
-	</dict>
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
@@ -90,36 +72,6 @@
 	</array>
 	<key>QSRegistration</key>
 	<dict>
-		<key>QSActionProviders</key>
-		<dict>
-			<key>QSRdioPluginActionProvider</key>
-			<string>QSRdioPluginActionProvider</string>
-		</dict>
-		<key>QSApplicationActionsTemplate</key>
-		<dict>
-			<key>com.domain.application</key>
-			<dict>
-				<key>RdioPluginExampleCommand</key>
-				<dict>
-					<key>actionClass</key>
-					<string>QSRdioPluginActionProvider</string>
-					<key>command</key>
-					<string>RdioPluginExampleCommand</string>
-					<key>name</key>
-					<string>Application Action Example</string>
-				</dict>
-			</dict>
-		</dict>
-		<key>QSBundleChildHandlers</key>
-		<dict>
-			<key>QSRdioPluginType</key>
-			<string>QSRdioPluginSource</string>
-		</dict>
-		<key>QSBundleChildHandlersTemplate</key>
-		<dict>
-			<key>com.domain.application</key>
-			<string>QSRdioPluginSource</string>
-		</dict>
 		<key>QSCommands</key>
 		<dict>
 			<key>RdioPluginAddToCollection</key>
@@ -312,79 +264,10 @@
 				</dict>
 			</dict>
 		</dict>
-		<key>QSObjectHandlers</key>
-		<dict>
-			<key>QSRdioPluginType</key>
-			<string>QSRdioPluginSource</string>
-		</dict>
 		<key>QSObjectSources</key>
 		<dict>
 			<key>QSRdioPluginControlSource</key>
 			<string>QSRdioPluginControlSource</string>
-			<key>QSRdioPluginSource</key>
-			<string>QSRdioPluginSource</string>
-		</dict>
-		<key>QSPreferencePanesTemplate</key>
-		<dict>
-			<key>RdioPluginPrefPaneTemplate</key>
-			<dict>
-				<key>class</key>
-				<string>RdioPluginPrefPane</string>
-				<key>description</key>
-				<string>Preferences</string>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>RdioPlugin</string>
-			</dict>
-		</dict>
-		<key>QSProxiesTemplate</key>
-		<dict>
-			<key>RdioPluginSomeProxy</key>
-			<dict>
-				<key>icon</key>
-				<string>GenericDocumentIcon</string>
-				<key>name</key>
-				<string>RdioPlugin Proxy</string>
-				<key>providerClass</key>
-				<string>QSRdioPluginSource</string>
-				<key>types</key>
-				<array>
-					<string>QSRdioPluginType</string>
-				</array>
-			</dict>
-		</dict>
-		<key>QSTriggerEventsTemplate</key>
-		<dict>
-			<key>RdioPluginSomeEvent</key>
-			<dict>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>Do something in response to this event</string>
-				<key>provider</key>
-				<string>QSRdioPluginSource</string>
-			</dict>
-		</dict>
-		<key>QSTriggerSetsTemplates</key>
-		<dict>
-			<key>RdioPluginTriggers</key>
-			<dict>
-				<key>icon</key>
-				<string>KEXT</string>
-				<key>name</key>
-				<string>RdioPlugin</string>
-			</dict>
-		</dict>
-		<key>QSTypeDefinitions</key>
-		<dict>
-			<key>QSRdioPluginType</key>
-			<dict>
-				<key>icon</key>
-				<string>GenericDocumentIcon</string>
-				<key>name</key>
-				<string>RdioPlugin Object</string>
-			</dict>
 		</dict>
 	</dict>
 	<key>QSRequirements</key>

@@ -7,14 +7,6 @@
 
 #define QSRdioPluginType @"QSRdioPluginType"
 
-
-
-@interface QSRdioPluginSource : QSObjectSource
-{
-}
-
-@end
-
 @interface QSRdioPluginControlSource : QSObjectSource
 
 @end

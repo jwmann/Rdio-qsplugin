@@ -25,9 +25,3 @@
 @property (nonatomic, strong) RdioApplication *rdio;
 
 @end
-
-@interface QSRdioPluginActionProvider : QSActionProvider
-{
-}
-
-@end
