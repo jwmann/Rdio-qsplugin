@@ -1,3 +1,9 @@
+**NOTICE**
+========
+This Repository is no longer maintained as Rdio isn't [a thing anymore. (RIP)](http://www.theverge.com/2015/11/16/9746220/pandora-to-acquire-key-parts-of-rdio)
+
+I will leave this repo up for those whom want to learn from Objective-C and Quicksilver plugin development, as well as how to control a local osx application. :v:
+
 Rdio Quicksilver Plugin
 =======================
 
